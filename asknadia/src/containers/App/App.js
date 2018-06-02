@@ -46,21 +46,12 @@ class App extends Component {
         console.log(this.state.rows);
     }
 
-    /*
-
-    <ChatWindow
-                    rows={this.state.rows}
-                />
-                <ChatInput
-                    uid={this.state.uid}
-                    addRow={this.addRow}
-                />
-
-                */
-
     render() {
         return (
             <div className="App">
+                <ChatWindow
+                    rows={this.state.rows}
+                />
                 <ChatInput
                     uid={this.state.uid}
                     addRow={this.addRow}
