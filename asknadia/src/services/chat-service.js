@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-import { CHAT_ENDPOINT } from '../constants/constants';
+const endpoint = 'https://r1xu4fbkq7.execute-api.us-east-1.amazonaws.com/dev';
 
 const headers = new Headers({
     'Content-Type': 'application/json',
@@ -15,17 +15,13 @@ export default class ChatService {
                 uid,
             };
 
-            fetch(CHAT_ENDPOINT, {
+            fetch(endpoint, {
                 method: 'POST',
                 headers,
-                body: this.buildPayload(payload),
+                body: JSON.stringify(payload),
             }).then((res) => {
                 resolve(res.json());
             });
         });
-    }
-
-    buildPayload = (payload) => {
-        return JSON.stringify(payload);
     }
 }
