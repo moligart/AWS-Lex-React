@@ -1,0 +1,18 @@
+.inputContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+.inputContainer textarea {
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-top: 2px;
+    padding: 5px;
+    font-size: 1.1em;
+    -webkit-highlight: none;
+}

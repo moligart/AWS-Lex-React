@@ -11,7 +11,7 @@ export default class ChatWindow extends Component {
 
     render() {
         return (
-            <div className="chatwindow">
+            <div className="chatWindow">
                 {this.props.rows.map((item, index) => {
                     return (
                         <ChatText

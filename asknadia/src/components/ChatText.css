@@ -1,0 +1,19 @@
+.text {
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+    min-width: 50%;
+    max-width: 85%;
+}
+
+.bot {
+    float: left;
+    font-style: italic;
+    background-color: lightblue;
+}
+
+.user {
+    text-align: right;
+    float: right;
+    background-color: #bbf;
+}
