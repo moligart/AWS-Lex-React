@@ -89,15 +89,13 @@ export default class ChatInput extends Component {
     render() {
         return (
             <div className="inputContainer">
-                <input
-                    type="text"
+                <textarea
                     ref={(input) => {
                         if (input) {
                             input.focus();
                         }
                         this.input = input;
                     }}
-                    defaultValue="Enter text"
                 />
             </div>
         );
