@@ -38,6 +38,7 @@
 
 .headerText {
     position: absolute;
-    left: 20px;
-    font-size: 45px;
+    left: 5px;
+    font-size: 30px;
+    line-height: 50px;
 }
