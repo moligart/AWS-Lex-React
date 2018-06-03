@@ -15,7 +15,13 @@ class App extends Component {
 
         this.state = {
             uid: null,
-            rows: [],
+            rows: [{
+                type: 'bot',
+                data: {
+                    message: 'Talk at me. I learn as I go.',
+                    messageFormat: 'PlainText',
+                },
+            }],
         };
 
         this.init = this.init.bind(this);
@@ -43,7 +49,6 @@ class App extends Component {
 
     addRow = (row) => {
         this.setStateHelper({ rows: this.state.rows.concat(row) });
-        console.log(this.state.rows);
     }
 
     render() {
