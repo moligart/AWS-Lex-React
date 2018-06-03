@@ -3,13 +3,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border-top: 1px solid grey;
     text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 0 0 10px #333;
 }
 
 .inputContainer textarea {
     width: 90%;
-    height: 50px;
+    height: 30px;
     border: none;
     margin-top: 2px;
     padding: 5px;

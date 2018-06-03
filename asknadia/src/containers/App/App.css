@@ -4,4 +4,40 @@
     right: 0;
     top: 0;
     bottom: 0;
+    margin: auto;
+    max-width: 600px;
+    max-height: 900px;
+    background-color: #e6e4e4;
+    border-radius: 2px;
+    box-shadow: 0 0 30px #333;
+}
+
+.header {
+    background: #00d6ff59;
+    position: relative;
+    overflow: visible;
+    height: 50px;
+    box-shadow: 0 0 10px #333;
+}
+
+.header > * {
+    position: relative;
+}
+
+.headerImage {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 100%;
+    background: url("../../assets/bot-avatar.jpeg") no-repeat;
+    background-size: 95px;
+    z-index: 99;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.headerText {
+    position: absolute;
+    left: 20px;
+    font-size: 45px;
 }

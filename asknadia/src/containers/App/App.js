@@ -49,6 +49,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <header className="header">
+                    <span className="headerText">AskNadia</span>
+                    <div className="headerImage" />
+                </header>
                 <ChatWindow
                     rows={this.state.rows}
                 />

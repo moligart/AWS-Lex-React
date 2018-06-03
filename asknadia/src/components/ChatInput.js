@@ -49,15 +49,24 @@ export default class ChatInput extends Component {
                 evt.preventDefault();
             }
 
-            const inputText = this.input.value;
             this.setStateHelper({ blockInput: true });
 
-            if (inputText) {
-                this.pushChat(inputText);
+            const message = this.input.value;
+            this.input.value = '';
+            this.props.addRow([{
+                type: 'user',
+                data: {
+                    message,
+                    messageFormat: 'PlainText',
+                },
+            }]);
+
+            if (message) {
+                this.pushChat(message);
             } else {
                 // Add a line complaining about empty input
                 this.props.addRow([{
-                    type: 'user',
+                    type: 'bot',
                     data: {
                         message: 'You have to enter something for me to respond to it.',
                         messageFormat: 'PlainText',

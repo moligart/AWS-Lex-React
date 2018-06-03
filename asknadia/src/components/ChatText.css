@@ -1,7 +1,4 @@
 .text {
-    margin: 4px;
-    padding: 4px 10px 4px 10px;
-    border-radius: 4px;
     min-width: 50%;
     max-width: 85%;
 }
@@ -9,11 +6,51 @@
 .bot {
     float: left;
     font-style: italic;
-    background-color: lightblue;
+    margin-left: 8px;
 }
 
 .user {
     text-align: right;
     float: right;
-    background-color: #bbf;
+    margin-right: 8px;
+}
+
+.avatar {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.message {
+    width: auto;
+    margin: 4px;
+    padding: 4px 10px 4px 10px;
+    border-radius: 4px;
+}
+
+.bot .avatar {
+    float: left;
+    background: url("../assets/bot-avatar.jpeg") no-repeat;
+    background-size: 48px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.bot .message {
+    margin-left: 3.25em;
+    background-color: #B3E5FC;
+}
+
+.user .avatar {
+    float: right;
+    background: url("../assets/user-avatar.png") no-repeat;
+    background-size: 48px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.user .message {
+    margin-right: 3.25em;
+    background-color: #C8E6C9;
 }

@@ -7,11 +7,20 @@ import ChatText from './ChatText';
 export default class ChatWindow extends Component {
     constructor(props) {
         super(props);
+
+        this.window = React.createRef();
+    }
+
+    componentDidUpdate() {;
+        this.window.current.scrollTop = this.window.current.scrollHeight;
     }
 
     render() {
         return (
-            <div className="chatWindow">
+            <div
+                ref={this.window}
+                className="chatWindow"
+            >
                 {this.props.rows.map((item, index) => {
                     return (
                         <ChatText

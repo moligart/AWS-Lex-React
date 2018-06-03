@@ -10,7 +10,10 @@ export default class ChatText extends Component {
     render() {
         return (
             <div className={`text ${this.props.type}`}>
-                <span>{this.props.data.message}</span>
+                <div className="avatar"/>
+                <div className="message">
+                    <p>{this.props.data.message}</p>
+                </div>
             </div>
         );
     }
