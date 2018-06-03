@@ -1,0 +1,30 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  AskNadiaPostChat:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: .
+      Description: ''
+      MemorySize: 128
+      Timeout: 3
+      Role: '**********'
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /
+            Method: POST
+      Environment:
+        Variables:
+          AWS_API_VERSION: '2016-11-28'
+          BOT_ALIAS: Dev
+          BOT_NAME: AskNadia
+          DYNAMO_API_VERSION: '2012-08-10'
+          PUBLIC_KEY: '**********'
+          REGION: us-east-1
+          SECRET_KEY: '**********'
+          URL_HOST: runtime.lex.us-east-1.amazonaws.com
