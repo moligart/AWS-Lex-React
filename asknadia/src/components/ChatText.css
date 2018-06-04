@@ -27,6 +27,7 @@
     margin: 4px;
     padding: 4px 10px 4px 10px;
     border-radius: 4px;
+    box-shadow: 0 0 30px #333;
 }
 
 .bot .avatar {

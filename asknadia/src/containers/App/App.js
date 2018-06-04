@@ -18,7 +18,7 @@ class App extends Component {
             rows: [{
                 type: 'bot',
                 data: {
-                    message: 'Talk at me. I learn as I go.',
+                    message: 'I can tell you a joke, order pizza, or tell you about things. You can also just talk to me... What do you want to do?',
                     messageFormat: 'PlainText',
                 },
             }],
