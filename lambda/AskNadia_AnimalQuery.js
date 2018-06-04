@@ -25,7 +25,6 @@ function dispatch(intentRequest, callback) {
             'Fulfilled', 
             {'contentType': 'PlainText', 'content': content}
         ));
-    
 }
  
 exports.handler = (event, context, callback) => {
